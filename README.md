@@ -1,4 +1,4 @@
-# Hi there! 👋 I'm Sankalp
+# Hi there! 👋 I'm Sankalp Shankar
 
 ## About Me
 - 💻 Software Developer
