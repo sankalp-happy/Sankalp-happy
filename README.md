@@ -1,37 +1,53 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=24&pause=1500&color=58A6FF&center=true&vCenter=true&width=640&height=45&lines=Sankalp+Shankar;LLM+gateways%2C+RAG+pipelines%2C+lab+notebooks;most+of+them+even+work" alt="Sankalp Shankar" />
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=24&pause=1600&color=58A6FF&center=true&vCenter=true&width=640&height=45&lines=Sankalp+Shankar;ML+engineer%2C+Bengaluru;LLM+serving+and+the+plumbing+around+it" alt="Sankalp Shankar" />
 
 <p>
+<a href="https://sankalpshankar.netlify.app"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=netlify&logoColor=white" alt="Portfolio"></a>
 <a href="https://www.linkedin.com/in/sankalp-shankar-734007284/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://leetcode.com/sankalpshankar/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
 <a href="https://github.com/sankalp-happy?tab=followers"><img src="https://img.shields.io/github/followers/sankalp-happy?style=for-the-badge&color=58A6FF&labelColor=0D1117&logo=github&logoColor=white" alt="Followers"></a>
-<a href="https://github.com/sankalp-happy/switchboard"><img src="https://img.shields.io/github/stars/sankalp-happy/switchboard?style=for-the-badge&color=E3B341&labelColor=0D1117&logo=github&logoColor=white" alt="Stars"></a>
 </p>
 
 </div>
 
-AI engineering undergrad. I write Python for a living and JavaScript when a project needs a face.
-Most of what I build is plumbing between an application and a model, and most of it starts as a
-coursework repo that got out of hand.
+Machine learning engineer in Bengaluru, finishing a BE in AI and ML at Acharya Institute of
+Technology in 2027. My work is LLM serving and the infrastructure around it rather than training
+models from scratch.
+
+### Now
+
+Machine learning intern at **Kapture CX**, where I run a 31B model on H200s under vLLM. Most of the
+job is finding where the latency actually went: restructuring prompts so the prefix cache gets hit
+instead of missed, and benchmarking GPTQ against AWQ to learn what each quantization really costs.
+
+Before that I freelanced for **Southern Railway**, building a document ingestion pipeline that
+distributes RDSO engineering standards and uses ETag revision tracking so it re-fetches a document
+only when the document has changed.
 
 ### Things I've built
 
 **[switchboard](https://github.com/sankalp-happy/switchboard)** is an LLM gateway. It sits between
 your app and Groq, Google, or Anthropic, speaks the OpenAI API so nothing downstream has to change,
 caches semantically similar prompts in Redis, and rotates to a fresh key the moment one returns a
-429. Keys are encrypted at rest with Fernet. There are Grafana dashboards. Ten people have starred
-it, which is ten more than I planned for.
+429. Keys are encrypted at rest with Fernet, and there are Grafana dashboards for the parts you
+only care about at 2am.
 [Live](https://switchboard-tau-ruby.vercel.app)
 
-**[RA-rag-reimp](https://github.com/sankalp-happy/RA-rag-reimp)** reproduces retrieval-augmented
-generation research and scores answer faithfulness with AlignScore. The entry point is
-`rag_ringmaster.py` and the eval sweep is `hammer_the_clowns.sh`, which should tell you roughly how
-the debugging went.
+**[PharmaGuard](https://pharmaguard-tbo.netlify.app)** turns a genomic VCF file into prescribing
+guidance. PharmCAT and the CPIC rule set make every clinical decision, deterministically. Llama 3.3
+is allowed to write the explanation and nothing else, which is the only arrangement I'd trust near
+a prescription.
 
-**[habba](https://github.com/sankalp-happy/habba)** is a Flutter app on Firebase with Cloud
-Functions behind it. **[Major_Project](https://github.com/sankalp-happy/Major_Project)** is a React
-and TypeScript front end over a two-phase Python pipeline. The rest of the account is lab work,
-hackathons, and one repo called `victim-repo` that exists for reasons I stand by.
+**[MediAssist AI](https://github.com/IAteNoodles/MedAssist)** is RAG clinical decision support with
+appointment booking and a doctor dashboard, built on LangChain over a vector store with XGBoost
+alongside it.
+
+Also: **Red Agent**, a vulnerability scanner with modular exploit checks (FastAPI, Redis, AWS);
+dropout implemented from the paper, forward and backward pass, in NumPy; and hybrid search over
+PDFs combining FAISS with TF-IDF because dense retrieval alone kept missing exact terms.
+
+Four hackathon wins so far, plus overall champion at XActitude techfest.
 
 ### Stack
 
@@ -40,26 +56,26 @@ Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+
+Serving and modelling
+
+![vLLM](https://img.shields.io/badge/vLLM-1A1A2E?style=flat-square&logo=lightning&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-4B8BBE?style=flat-square&logo=meta&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
 Services and data
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![NGINX](https://img.shields.io/badge/NGINX-009639?style=flat-square&logo=nginx&logoColor=white)
-
-Models and instruments
-
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 ### A snake is eating last year
 
@@ -86,5 +102,5 @@ Models and instruments
 </div>
 
 <div align="center">
-<sub>Both graphs rebuild themselves every night at 18:00 UTC, which is the only chore on this profile I have fully delegated.</sub>
+<sub>Both graphs rebuild themselves every night at 18:00 UTC.</sub>
 </div>
