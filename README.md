@@ -12,8 +12,7 @@
 </div>
 
 Machine learning engineer in Bengaluru, finishing a BE in AI and ML at Acharya Institute of
-Technology in 2027. My work is LLM serving and the infrastructure around it rather than training
-models from scratch.
+Technology in 2027.
 
 ### Now
 
