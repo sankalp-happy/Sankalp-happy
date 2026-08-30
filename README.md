@@ -8,9 +8,7 @@
 <a href="mailto:sankalpshankar02@gmail.com"><img src="https://img.shields.io/badge/Email-C71610?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 <img src="https://komarev.com/ghpvc/?username=sankalp-happy&style=for-the-badge&color=58A6FF&label=VISITS" alt="Profile views">
 
-<br><br>
-
-**LLM serving and the infrastructure around it. Not training models from scratch.**
+<br>
 
 </div>
 
@@ -18,7 +16,7 @@
 
 |  |  |
 |---|---|
-| **Kapture CX** · ML intern | 31B model on H200s under vLLM. Prompts restructured so the prefix cache hits. GPTQ benchmarked against AWQ. |
+| **Kapture CX** · ML intern | LLM based systems. Model training, post-training, fine-tuning, inference optimisation. |
 | **Southern Railway** · freelance | RDSO standards distribution. ETag revision tracking, so nothing re-fetches unless it changed. |
 | **Acharya Institute** · BE in AI and ML | Graduating 2027. |
 
