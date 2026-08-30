@@ -17,9 +17,8 @@ models from scratch.
 
 ### Now
 
-Machine learning intern at **Kapture CX**, where I run a 31B model on H200s under vLLM. Most of the
-job is finding where the latency actually went: restructuring prompts so the prefix cache gets hit
-instead of missed, and benchmarking GPTQ against AWQ to learn what each quantization really costs.
+Machine learning intern at **Kapture CX**, where I mostly work with LLM based systems.
+That sometimes includes but is not limited to model training , post training , fine-tuning and inferenece optimisations.
 
 Before that I freelanced for **Southern Railway**, building a document ingestion pipeline that
 distributes RDSO engineering standards and uses ETag revision tracking so it re-fetches a document
